@@ -17,6 +17,7 @@
   "author": "Reginaldo Santos (xumes@reginaldosantos.com.br)",
   "license": "ISC",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "npm": "^5.8.0"
   },
   "devDependencies": {
@@ -24,6 +25,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-es2015": "^6.24.1",
     "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.8.3",

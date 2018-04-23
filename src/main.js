@@ -1,11 +1,10 @@
-require('./style.scss')
 
 class Init {
     constructor() {
-        const partial = require('./partial.html')
-        
+        const component = require('./template/index')
         let app = document.getElementById('app')
-        app.innerHTML=partial
+        app.innerHTML=component.template
+        component.action()
     }
 }
 
