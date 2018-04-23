@@ -17,19 +17,21 @@ module.exports = {
         let closeMenu = document.getElementById('wrapper')
 
         let closeMenuEvent = (e) => {
-            let boy = document.querySelector('body')
+            let body = document.querySelector('body')
             body.className = body.className.replace('show-menu', '')
+
+            closeMenu.removeEventListener('click', closeMenuEvent, true)
         }
 
-        openMenu.addEventListener('click', (e) => {
+        let openMenuEvent = (e) => {
             e.preventDefault() //para não navegar para o link
             let body = document.querySelector('body')
             body.className += " show-menu"
+            body.className = body.className.trim()
 
-            closeMenu.addEventListener('click', (e) => {
-                let boy = document.querySelector('body')
-                body.className = body.className.replace('show-menu', '')
-            }, true)
-        })
+            closeMenu.addEventListener('click', closeMenuEvent, true)
+        }
+
+        openMenu.addEventListener('click', openMenuEvent)
     }
 }
