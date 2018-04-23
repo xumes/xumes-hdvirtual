@@ -1,10 +1,10 @@
 class Init {
-    constructor() {
-        console.log('Ainda funcionando')
+    constructor(name) {
+        console.log(`Olá ${name}`)
     }
 }
 
 
 
 
-new Init()
+new Init('Xumes')
