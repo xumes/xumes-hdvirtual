@@ -1,0 +1,20 @@
+{
+  "name": "xumes-hdvirtual",
+  "version": "1.0.0",
+  "description": "Virtual Drive for my videos and pictures",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Webpack",
+    "Firebase",
+    "MobileFirst"
+  ],
+  "author": "Reginaldo Santos (xumes@reginaldosantos.com.br)",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^5.8.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
+  }
+}
