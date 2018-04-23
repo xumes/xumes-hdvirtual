@@ -17,6 +17,7 @@
   "author": "Reginaldo Santos (xumes@reginaldosantos.com.br)",
   "license": "ISC",
   "dependencies": {
+    "firebase": "^4.13.1",
     "font-awesome": "^4.7.0",
     "npm": "^5.8.0"
   },
