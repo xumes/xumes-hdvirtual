@@ -1,8 +1,11 @@
 require('./style.scss')
 
 class Init {
-    constructor(name) {
-        console.log(`Olá ${name}`)
+    constructor() {
+        const partial = require('./partial.html')
+        
+        let app = document.getElementById('app')
+        app.innerHTML=partial
     }
 }
 
