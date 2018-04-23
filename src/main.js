@@ -1,26 +1,20 @@
-
-import * as firebase from 'firebase'
+import { app } from './base'
+import component from './template'
+import filesList from './filesList'
 
 class Init {
     constructor() {
-        this.firebase()
-        const component = require('./template/index')
-        let app = document.getElementById('app')
-        app.innerHTML = component.template
+        //const component = require('./template/index')
+        let elementApp = document.getElementById('app')
+        elementApp.innerHTML = component.template
         component.action()
-    }
 
-    firebase() {
-        // Initialize Firebase
-        const config = {
-            apiKey: "AIzaSyDAFKKfNp4wc81C0zhA8Iel0pvgG4XaPKE",
-            authDomain: "xumes-hdvirtual.firebaseapp.com",
-            databaseURL: "https://xumes-hdvirtual.firebaseio.com",
-            projectId: "xumes-hdvirtual",
-            storageBucket: "xumes-hdvirtual.appspot.com",
-            messagingSenderId: "1035611836007"
-        };
-        firebase.initializeApp(config)
+        //const filesList = require('./filesList/index')
+        let elementFileList = document.getElementById('main')
+        elementFileList.innerHTML = filesList.template
+        filesList.action()
+
+
     }
 }
 
