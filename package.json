@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Virtual Drive for my videos and pictures",
   "scripts": {
+    "start": "webpack --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
