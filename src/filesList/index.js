@@ -6,11 +6,19 @@ export default  {
       let data =  [
             {
                 type: 'folder-open',
-                title: 'Meu diretório'
+                title: 'Fotos'
+            },
+            {
+                type: 'folder-open',
+                title: 'Notas'
             },
             {
                 type: 'file',
                 title: 'Anotações.txt'
+            },
+            {
+                type: 'file',
+                title: 'Lista de Tarefas.txt'
             }
         ]
 
