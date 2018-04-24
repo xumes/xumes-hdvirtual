@@ -1,4 +1,3 @@
-import { app } from './base'
 import component from './template'
 import filesList from './filesList'
 
