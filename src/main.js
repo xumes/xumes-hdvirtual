@@ -1,19 +1,18 @@
 import component from './template'
 import filesList from './filesList'
 
+const components = [
+    component,
+    filesList
+]
+
 class Init {
     constructor() {
-        //const component = require('./template/index')
-        let elementApp = document.getElementById('app')
-        elementApp.innerHTML = component.template
-        component.action()
-
-        //const filesList = require('./filesList/index')
-        let elementFileList = document.getElementById('main')
-        elementFileList.innerHTML = filesList.template
-        filesList.action()
-
-
+        components.forEach((component) => {
+            let elementApp = document.getElementById(component.el)
+            elementApp.innerHTML = component.template
+            component.action()
+        })
     }
 }
 

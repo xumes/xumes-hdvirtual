@@ -7,6 +7,7 @@ let footer = require('./footer.html')
 let sidebar = require('./sidebar.html')
 
 export default  {
+    el: 'app',
     template: `
         <div id="wrapper">
             ${header}${content}${footer}

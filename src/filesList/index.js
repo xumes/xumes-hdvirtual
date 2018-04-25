@@ -3,6 +3,7 @@ import onClick from './onClick'
 require('./style.scss')
 
 export default {
+    el: 'main',
     template: require('./template.html'),
     action() {
         getFirebaseData({
