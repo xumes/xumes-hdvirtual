@@ -6,6 +6,23 @@ export default (snapshot) => {
     console.log(data) //agora é um array
 
     let partial = require('./partial.html')
+
+    //classifica por nomes
+    data.sort((a, b) => {
+        if (typeof a[1] != 'object') {
+            return //sai do loop for atual sem fazer nada e continua 
+        }
+        return a[1].title.localeCompare(b[1].title)
+    })
+
+    //classifica por tipos (pasta em primeiro, arquivos em segundo)
+    data.sort((a, b) => {
+        if (typeof a[1] != 'object') {
+            return //sai do loop for atual sem fazer nada e continua 
+        }
+        return a[1].type < (b[1].type)
+    })
+
     let html = ''
     for (let index in data) {
         //remove do array os itens que não são objetos 
