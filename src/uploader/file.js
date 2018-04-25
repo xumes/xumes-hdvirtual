@@ -1,3 +1,4 @@
 export default () => {
-    console.log('fazer upload')
+    let fileInput = document.getElementById('file')
+    fileInput.click()
 }
